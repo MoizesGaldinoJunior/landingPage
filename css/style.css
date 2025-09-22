@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	--bg-darkgray: #0d0d0d;
+	--bg-gray: #232323;
+	--btn: #3f6ca6;
+	--color-text: #3f6ca6;
+	--text: #f2f2f2;
+	--font: "Azeret Mono", monospace;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--bg-darkgray);
+	color: var(--text);
+	font-family: var(--font);
+}
+
+header {
+	width: 100%;
+	height: 65px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 100px 0 100px;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	width: 50%;
+}
+
+.nav-bar {
+	width: 50%;
+	display: flex;
+	justify-content: end;
+}
+
+.nav-bar a {
+	text-decoration: none;
+	color: var(--text);
+	margin-left: 40px;
+	font-weight: 200;
+}
+
+.nav-bar a:hover {
+	color: #dbdbdb;
+	transition: all 0.2s;
+}
+
+.first {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.person {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.person img {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 3px solid var(--text);
+}
+
+.person h2 {
+	font-weight: 400;
+	font-size: 4em;
+	margin: 20px 0 10px 0;
+}
+
+.person span {
+	color: var(--color-text);
+	font-weight: 700;
+	background-color: var(--bg-gray);
+}
+
+.person h4 {
+	font-size: 1em;
+	font-weight: 200;
+}
+
+.btn-learn {
+	background: var(--btn);
+	width: 150px;
+	height: 46px;
+	border: none;
+	border-radius: 5px;
+	color: var(--bg-gray);
+	cursor: pointer;
+	margin-top: 50px;
+}
+
+.scroller {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 158px;
+	background-color: var(--bg-gray);
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-mask: linear-gradient(
+		90deg,
+		transparent,
+		white 20%,
+		white 80%,
+		transparent
+	);
+	mask: linear-gradient(
+		90deg,
+		transparent,
+		white 20%,
+		white 80%,
+		transparent
+	);
+}
+
+.scroller img {
+	max-width: 100%;
+}
+
+.scroller__inner {
+	padding-left: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 6rem;
+}
