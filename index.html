@@ -26,9 +26,9 @@
                 <h2>I'm <span id="iam"></span></h2>
                 <h4>UI/UX Designer and Front-end Developer.</h4>
                 
-                <button class="btn-learn">
+                <a href="#" class="btn-learn">
                     Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </button>
+                </a>
             </div>
 
             <div class="scroller" data-speed="slow">
@@ -71,28 +71,28 @@
                     <label>
                         <img src="assets/img3.png" alt="">
                     </label>
-                    <button>
+                    <a href="#">
                         <span>Development</span>
                         <p>View More <i class="fa-solid fa-arrow-right"></i></p>
-                    </button>
+                    </a>
                 </div>
                 <div class="cardsBtn">
                     <label>
                         <img src="assets/img2.png" alt="">
                     </label>
-                    <button>
+                    <a href="#">
                         <span>Design</span>
                         <p>View More <i class="fa-solid fa-arrow-right"></i></p>
-                    </button>
+                    </a>
                 </div>
                 <div class="cardsBtn">
                     <label>
                         <img src="assets/img1.png" alt="">
                     </label>
-                    <button>
+                    <a href="#">
                         <span>UX/UI</span>
                         <p>View More <i class="fa-solid fa-arrow-right"></i></p>
-                    </button>
+                    </a>
                 </div>
             </div>
             <hr>
@@ -162,23 +162,26 @@
                 </div>
                 <form action="">
                     <label>
-                        <i class="fa-solid fa-envelope"></i><input type="email" placeholder="Email">
+                        <i class="fa-solid fa-envelope"></i><input type="email" name="user_email" placeholder="Email">
                     </label>
                     <label>
-                        <i class="fa-solid fa-phone"></i><input type="tel" placeholder="Phone">
+                        <i class="fa-solid fa-phone"></i><input type="tel" name="phone" placeholder="Phone">
                     </label>
                     <label>
                         <i class="fa-solid fa-user"></i><input type="text" placeholder="Name">
                     </label>
                     <label class="textarea">
-                        <textarea name="mensage id=" mensage" placeholder="Mensage"></textarea>
+                        <textarea name="mensage" rows="5" cols="40" id=" mensage" placeholder="Mensage" maxlength="300" required></textarea>
                     </label>
                     <button type="submit" class="btn-learn">Submit</button>
                 </form>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <hr>
+        Criado por Junior Galdino
+    </footer>
     <script src="script/script.js"></script>
 </body>
 </html>

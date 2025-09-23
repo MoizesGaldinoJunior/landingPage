@@ -103,6 +103,9 @@ section {
 }
 
 .btn-learn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: var(--btn);
 	width: 150px;
 	height: 46px;
@@ -111,10 +114,13 @@ section {
 	color: var(--bg-gray);
 	cursor: pointer;
 	margin-top: 50px;
+	text-decoration: none;
+	font-size: 0.8em;
 }
 
 .btn-learn i{
 	font-size: 1rem;
+	margin-left: 5px;
 }
 
 .scroller {
@@ -256,7 +262,7 @@ hr{
 	width: 150%;
 }
 
-.cardsBtn button{
+.cardsBtn a{
 	background-color: var(--btn);
 	width: 100%;
 	border: none;
@@ -267,15 +273,21 @@ hr{
 	justify-content: center;
 	align-items: center;
 	gap: 4px;
+	text-decoration: none;
 }
 
-.cardsBtn button > span{
+.cardsBtn a > span{
 	font-size: 2em;
 	font-weight: 600;
 	color: var(--text);
 }
 
-.cardsBtn button > p i{
+.cardsBtn a > p{
+	font-size: 0.8em;
+	color: var(--bg-gray);
+}
+
+.cardsBtn a > p i{
 	font-size: 1em;
 	color: var(--bg-darkgray);
 }
@@ -343,7 +355,6 @@ hr{
 }
 
 .contact{
-	border: 1px solid red;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -416,6 +427,7 @@ hr{
 	font-family: var(--font);
 	font-size: 2em;
 	font-weight: 200;
+	outline: none;
 }
 
 .contact .textarea{
@@ -431,5 +443,7 @@ hr{
 	font-size: 2em;
 	font-weight: 200;
 	padding: 10px;
+	outline: none;
+	color: var(--text);
 }
 
