@@ -207,6 +207,7 @@ h2{
 
 hr{
 	width: 60%;
+	border-color:#838383;
 }
 
 .portfolio{
@@ -278,3 +279,157 @@ hr{
 	font-size: 1em;
 	color: var(--bg-darkgray);
 }
+
+.experience{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	/* border: 1px solid red; */
+}
+
+.experience .container__content{
+	width: 80%;
+	display: flex;
+	gap: 30px;
+}
+
+.container__content .content{
+	width: 100%;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+}
+
+.experience span{
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.experience p{
+	font-size: 0.8em;
+	font-weight: 200;
+}
+
+.content hr{
+	width: 100%;
+}
+
+.content-left{
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: space-around;
+	/* border: 1px solid red; */
+}
+
+.content-left .content{
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	text-align: right;
+	/* border: 1px solid red; */
+}
+
+.content-right{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	/* border: 1px solid red; */
+
+}
+
+.contact{
+	border: 1px solid red;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.contact .contact__info{
+	width: 80%;
+	/* border: 1px solid red; */
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.contact__info .contacts{
+	/* border: 1px solid red; */
+	width: 50%;
+	height: 100%;
+	padding: 150px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.contacts h4{
+	font-size: .8em;
+	font-weight: 200;
+	margin-bottom: 5px;
+}
+
+.contacts span{
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.contact form{
+	/* border: 1px solid red; */
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+
+.contact form > label{
+	background-color: var(--bg-gray);
+	width: 70%;
+	height: 60px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #535353;
+	font-size: .5em;
+	padding:0 20px;
+}
+
+.contact form > label input{
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	color: var(--text);
+	font-family: var(--font);
+	font-size: 2em;
+	font-weight: 200;
+}
+
+.contact .textarea{
+	height: 234px;
+}
+
+.contact .textarea textarea{
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	font-family: var(--font);
+	font-size: 2em;
+	font-weight: 200;
+	padding: 10px;
+}
+
